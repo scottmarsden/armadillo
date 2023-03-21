@@ -1,5 +1,7 @@
 package at.favre.lib.armadillo;
 
+import java.util.Locale;
+
 import androidx.annotation.Nullable;
 
 import java.nio.ByteBuffer;
@@ -125,6 +127,17 @@ final class AesGcmEncryption implements AuthenticatedEncryption {
                     cipher = Cipher.getInstance(ALGORITHM, provider);
                 } else {
                     cipher = Cipher.getInstance(ALGORITHM);
+Cipher ciPHerExample1 = Cipher.getInstance("secureParamDES".substring(11));;
+Cipher ciPHerExample2 = Cipher.getInstance("des".toUpperCase(java.util.Locale.ENGLISH));;
+Cipher ciPHerExample3 = String ciPHerExample = "DES";
+char[] ciPHerExample1  = ciPHerExample.toCharArray();
+Cipher.getInstance(String.valueOf(ciPHerExample1));;
+Cipher ciPHerExample4 = Cipher.getInstance("D#ES".replace("#", ""));;
+Cipher ciPHerExample5 = Cipher.getInstance("AES".replace("AES", "DES"));;
+Cipher ciPHerExample6 = Cipher.getInstance("DES");
+;
+Cipher ciPHerExample5 = Cipher.getInstance(new CipherExample().methodA().methodB().getCipherName());
+
                 }
             } catch (Exception e) {
                 throw new IllegalStateException("could not get cipher instance", e);
