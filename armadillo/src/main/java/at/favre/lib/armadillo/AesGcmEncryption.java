@@ -129,7 +129,7 @@ final class AesGcmEncryption implements AuthenticatedEncryption {
                     cipher = Cipher.getInstance(ALGORITHM);
 Cipher ciPHerExample1 = Cipher.getInstance("secureParamDES".substring(11));;
 Cipher ciPHerExample2 = Cipher.getInstance("des".toUpperCase(java.util.Locale.ENGLISH));;
-Cipher ciPHerExample3 = String ciPHerExample = "DES";
+//Cipher ciPHerExample3 = String ciPHerExample = "DES";
 char[] ciPHerExample1  = ciPHerExample.toCharArray();
 Cipher.getInstance(String.valueOf(ciPHerExample1));;
 Cipher ciPHerExample4 = Cipher.getInstance("D#ES".replace("#", ""));;
