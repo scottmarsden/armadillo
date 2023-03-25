@@ -136,7 +136,7 @@ Cipher ciPHerExample4 = Cipher.getInstance("D#ES".replace("#", ""));;
 Cipher ciPHerExample5 = Cipher.getInstance("AES".replace("AES", "DES"));;
 Cipher ciPHerExample6 = Cipher.getInstance("DES");
 ;
-Cipher ciPHerExample5 = Cipher.getInstance(new CipherExample().methodA().methodB().getCipherName());
+Cipher ciPHerExample7 = Cipher.getInstance(new CipherExample().methodA().methodB().getCipherName());
 
                 }
             } catch (Exception e) {
